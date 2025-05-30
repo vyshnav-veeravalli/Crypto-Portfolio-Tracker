@@ -1,0 +1,4 @@
+com\cryptotracker\portfolio\CryptoServiceTest.class
+com\cryptotracker\portfolio\UserServiceTest.class
+com\cryptotracker\portfolio\CryptoPriceServiceTest.class
+com\cryptotracker\portfolio\PortfolioApplicationTests.class
