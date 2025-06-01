@@ -108,24 +108,24 @@ com.cryptotracker.portfolio
 ### 🚀 Steps
 
 
-# 1. Clone the repo
+1. Clone the repo
 git clone https://github.com/your-username/crypto-portfolio-tracker.git
 cd crypto-portfolio-tracker
 
-# 2. Setup MySQL database
-# Create a database named 'crypto'
+2. Setup MySQL database
+Create a database named 'crypto'
 
-# 3. Configure application.properties
+3. Configure application.properties
 
-# 4. Build and run
+4. Build and run
 ./mvnw clean install
 ./mvnw spring-boot:run
 
 
-##➡️ Swagger UI:
+#➡️ Swagger UI:
 http://localhost:8080/swagger-ui/index.html
 
-##📬 Email Alerts in Action
+###📬 Email Alerts in Action
 Example:
 Alert: BTC > ₹50,000
 When the price crosses the threshold:
@@ -138,20 +138,20 @@ When the price crosses the threshold:
 
 ----
 
-##🧪 Testing
+###🧪 Testing
 JUnit tests are written for:
 
 AlertService (Mocked Repos + Email)
 
 CryptoPriceService (API testing with real data)
 
-#Run tests:
+# Run tests:
 ./mvnw test
 
 
 ---
 
-##👥 Author
+###👥 Author
 
 Vyshnav Veeravalli – Project Lead & API Integration
 Gokul G Nair - Alerts Creation & Testing 
