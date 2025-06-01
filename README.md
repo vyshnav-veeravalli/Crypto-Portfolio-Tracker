@@ -154,10 +154,15 @@ CryptoPriceService (API testing with real data)
 ###👥 Author
 
 Vyshnav Veeravalli – Project Lead & API Integration
+
 Gokul G Nair - Alerts Creation & Testing 
+
 Abhinav - User and authorization Management & Testing
+
 Hemanth - API Controllers and Real Time Data Management
+
 Aromal - GlobalException and Crypto Services
+
 Mrithunjay - Alerts Testing and Global Exceptions
 
 ---
