@@ -1,5 +1,7 @@
 package com.cryptotracker.portfolio;
 
+import com.cryptotracker.portfolio.DTO.LivePriceDTO;
+import com.cryptotracker.portfolio.service.CryptoPriceService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

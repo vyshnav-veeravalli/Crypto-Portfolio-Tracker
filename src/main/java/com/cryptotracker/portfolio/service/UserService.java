@@ -2,6 +2,10 @@ package com.cryptotracker.portfolio.service;
 
 import com.cryptotracker.portfolio.DTO.LoginDTO;
 import com.cryptotracker.portfolio.DTO.UserDTO;
+import com.cryptotracker.portfolio.Exception.EmailAlreadyExistsException;
+import com.cryptotracker.portfolio.Exception.EmailEmptyException;
+import com.cryptotracker.portfolio.Exception.NameEmptyException;
+import com.cryptotracker.portfolio.Exception.PasswordEmptyException;
 import com.cryptotracker.portfolio.entity.User;
 import com.cryptotracker.portfolio.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +29,13 @@ public class UserService {
         if (userDTO.getName() == null || userDTO.getName().trim().isEmpty()) {
             throw new NameEmptyException("Name cannot be empty");
         }
+        if(userDTO.getEmail() == null){
+            throw new EmailEmptyException("please enter your email");
+        }
+        if(userDTO.getPassword() == null){
+            throw new PasswordEmptyException("please enter your password");
+        }
+
 
         User user = new User();
         user.setName(userDTO.getName());

@@ -1,12 +1,14 @@
 package com.cryptotracker.portfolio.scheduler;
 
+import com.cryptotracker.portfolio.entity.Alert;
+import com.cryptotracker.portfolio.repository.AlertRepository;
+import com.cryptotracker.portfolio.service.AlertService;
+import com.cryptotracker.portfolio.service.CryptoPriceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Component
 public class AlertScheduler {
@@ -20,7 +22,7 @@ public class AlertScheduler {
     @Autowired
     private AlertService alertService;
 
-    @Scheduled(fixedRate = 50000) // Run every 50 seconds
+    @Scheduled(fixedRate = 50000)
     public void runEveryMinute() {
         List<Alert> alerts = alertRepository.findAll();
         Set<String> symbols = new HashSet<>();
@@ -30,7 +32,7 @@ public class AlertScheduler {
         }
 
         for (String symbol : symbols) {
-            double livePrice = priceService.getcurrentPriceBySymbol(symbol);
+            double livePrice = priceService.getPrice(symbol);
             alertService.checkAlerts(symbol, livePrice);
         }
     }

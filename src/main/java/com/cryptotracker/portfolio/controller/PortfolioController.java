@@ -4,7 +4,7 @@ import com.cryptotracker.portfolio.DTO.AddHoldingDTO;
 import com.cryptotracker.portfolio.DTO.DeleteHoldingDTO;
 import com.cryptotracker.portfolio.DTO.UpdateHoldingDTO;
 import com.cryptotracker.portfolio.entity.CryptoHolding;
-import com.cryptotracker.portfolio.exception.QuantityZeroBelow;
+import com.cryptotracker.portfolio.Exception.QuantityZeroBelow;
 import com.cryptotracker.portfolio.repository.CryptoRepo;
 import com.cryptotracker.portfolio.service.CryptoPriceService;
 import com.cryptotracker.portfolio.service.CryptoService;

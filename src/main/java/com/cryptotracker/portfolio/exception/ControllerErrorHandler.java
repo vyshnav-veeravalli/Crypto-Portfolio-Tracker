@@ -1,4 +1,4 @@
-package com.cryptotracker.portfolio.exception;
+package com.cryptotracker.portfolio.Exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -41,7 +41,18 @@ public class ControllerErrorHandler {
     }
     @ExceptionHandler(QuantityZeroBelow.class)
     public ResponseEntity<Object> handleBelowZero(QuantityZeroBelow ex){
-        return new ResponseEntity<>(Map.of("message",ex.getMessage()),HttpStatus.EXPECTATION_FAILED);}
+        return new ResponseEntity<>(Map.of("message",ex.getMessage()),HttpStatus.EXPECTATION_FAILED);
+    }
+
+    @ExceptionHandler(EmailEmptyException.class)
+    public ResponseEntity<Object>  handleEmailEmpty(EmailEmptyException ex){
+        return new ResponseEntity<>(Map.of("message", ex.getMessage()), HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(PasswordEmptyException.class)
+    public ResponseEntity<Object>  handlePasswordEmpty(PasswordEmptyException ex){
+        return new ResponseEntity<>(Map.of("message", ex.getMessage()), HttpStatus.BAD_REQUEST);
+    }
 
 }
 

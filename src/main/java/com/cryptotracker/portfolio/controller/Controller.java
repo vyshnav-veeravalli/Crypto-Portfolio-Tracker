@@ -21,7 +21,7 @@ public class Controller {
     @PostMapping("/register")
     public ResponseEntity<User> register(@RequestBody UserDTO userDTO) {
         User savedUser = userService.register(userDTO);
-        savedUser.setPassword("Encrypted"); // Never expose real passwords
+        savedUser.setPassword("Encrypted");
         return ResponseEntity.ok(savedUser);
     }
 

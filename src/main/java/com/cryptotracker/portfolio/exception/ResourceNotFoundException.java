@@ -1,4 +1,4 @@
-package com.cryptotracker.portfolio.exception;
+package com.cryptotracker.portfolio.Exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String message) {

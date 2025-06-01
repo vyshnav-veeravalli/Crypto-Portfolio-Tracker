@@ -1,7 +1,7 @@
 package com.cryptotracker.portfolio.service;
 
 import com.cryptotracker.portfolio.DTO.LivePriceDTO;
-import com.cryptotracker.portfolio.exception.InvalidCryptoException;
+import com.cryptotracker.portfolio.Exception.InvalidCryptoException;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
@@ -93,5 +93,11 @@ public class CryptoPriceService {
             throw new InvalidCryptoException("Invalid coin Symbol");
         }
         return id;
+    }
+
+    public double getPrice(String btc) {
+        return getcurrentPriceBySymbol(btc);
+
+
     }
 }

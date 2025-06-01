@@ -1,5 +1,8 @@
 package com.cryptotracker.portfolio;
 
+import com.cryptotracker.portfolio.entity.CryptoHolding;
+import com.cryptotracker.portfolio.repository.CryptoRepo;
+import com.cryptotracker.portfolio.service.CryptoService;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

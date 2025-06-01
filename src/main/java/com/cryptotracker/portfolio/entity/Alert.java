@@ -1,7 +1,6 @@
 package com.cryptotracker.portfolio.entity;
 
 import jakarta.persistence.*;
-
 import java.time.LocalDateTime;
 
 @Entity
