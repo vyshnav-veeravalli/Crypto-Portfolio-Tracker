@@ -1,4 +1,4 @@
-package com.cryptotracker.portfolio.DTO;
+package com.cryptotracker.portfolio.entity;
 
 public class AlertRequest {
     private String userEmail;
