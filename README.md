@@ -81,23 +81,6 @@ FinTech / Crypto Portfolio Management / Trading Tools
 
 ---
 
-## 🖥 Sample Configuration (`application.properties`)
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/crypto
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-
-spring.mail.host=smtp.gmail.com
-spring.mail.port=587
-spring.mail.username=your_email@gmail.com
-spring.mail.password=your_app_password
-spring.mail.properties.mail.smtp.auth=true
-spring.mail.properties.mail.smtp.starttls.enable=true
-
-
 
 ## 📁 Suggested Project Structure
 
@@ -124,7 +107,7 @@ com.cryptotracker.portfolio
 
 ### 🚀 Steps
 
-```bash
+
 # 1. Clone the repo
 git clone https://github.com/your-username/crypto-portfolio-tracker.git
 cd crypto-portfolio-tracker
@@ -153,6 +136,8 @@ When the price crosses the threshold:
 
 
 
+----
+
 ##🧪 Testing
 JUnit tests are written for:
 
@@ -164,6 +149,8 @@ CryptoPriceService (API testing with real data)
 ./mvnw test
 
 
+---
+
 ##👥 Author
 
 Vyshnav Veeravalli – Project Lead & API Integration
@@ -172,3 +159,24 @@ Abhinav - User and authorization Management & Testing
 Hemanth - API Controllers and Real Time Data Management
 Aromal - GlobalException and Crypto Services
 Mrithunjay - Alerts Testing and Global Exceptions
+
+---
+
+## 🖥 Sample Configuration (`application.properties`)
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/crypto
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=your_email@gmail.com
+spring.mail.password=your_app_password
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+
+
