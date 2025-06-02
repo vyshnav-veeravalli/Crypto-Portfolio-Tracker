@@ -163,7 +163,7 @@ Hemanth - API Controllers and Real Time Data Management
 
 Aromal - GlobalException and Crypto Services
 
-Mrithunjay - Alerts Testing and Global Exceptions
+Mrithunjay - Portfolio controller and Global Exceptions
 
 ---
 
