@@ -122,10 +122,10 @@ Create a database named 'crypto'
 ./mvnw spring-boot:run
 
 
-#➡️ Swagger UI:
+##➡️ Swagger UI:
 http://localhost:8080/swagger-ui/index.html
 
-###📬 Email Alerts in Action
+##📬 Email Alerts in Action
 Example:
 Alert: BTC > ₹50,000
 When the price crosses the threshold:
@@ -138,7 +138,7 @@ When the price crosses the threshold:
 
 ----
 
-###🧪 Testing
+##🧪 Testing
 JUnit tests are written for:
 
 AlertService (Mocked Repos + Email)
@@ -151,7 +151,7 @@ CryptoPriceService (API testing with real data)
 
 ---
 
-###👥 Author
+##👥 Author
 
 Vyshnav Veeravalli – Project Lead & API Integration
 
@@ -182,6 +182,11 @@ spring.mail.username=your_email@gmail.com
 spring.mail.password=your_app_password
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
+
+
+##🤝 Contributors
+Thanks to everyone who contributed through feedback, testing, or documentation.
+
 
 
 
