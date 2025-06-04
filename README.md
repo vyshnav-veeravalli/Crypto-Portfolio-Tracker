@@ -171,8 +171,7 @@ Mrithunjay - Portfolio controller and Global Exceptions
 
 
 
-##🤝 Contributors
-
+## 🤝 Contributors
 Thanks to everyone who contributed through feedback, testing, or documentation.
 ---
 
