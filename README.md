@@ -99,13 +99,13 @@ com.cryptotracker.portfolio
 
 ## ▶️ How to Run
 
-### 🔧 Prerequisites
+## 🔧 Prerequisites
 - Java 17+
 - Maven
 - MySQL Server
 - (Optional) Postman for testing
 
-### 🚀 Steps
+## 🚀 Steps
 
 
 1. Clone the repo
@@ -122,10 +122,10 @@ Create a database named 'crypto'
 ./mvnw spring-boot:run
 
 
-##➡️ Swagger UI:
+## ➡️ Swagger UI:
 http://localhost:8080/swagger-ui/index.html
 
-##📬 Email Alerts in Action
+## 📬 Email Alerts in Action
 Example:
 Alert: BTC > ₹50,000
 When the price crosses the threshold:
@@ -138,7 +138,7 @@ When the price crosses the threshold:
 
 ----
 
-##🧪 Testing
+## 🧪 Testing
 JUnit tests are written for:
 
 AlertService (Mocked Repos + Email)
@@ -151,7 +151,7 @@ CryptoPriceService (API testing with real data)
 
 ---
 
-##👥 Author
+## 👥 Author
 
 Vyshnav Veeravalli – Project Lead & API Integration
 
